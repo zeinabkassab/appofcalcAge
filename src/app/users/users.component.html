@@ -1,0 +1,59 @@
+<!-- 
+<p> hello {{firstName}} {{lastName}}</p>
+
+<!-- ============================================================
+ -->
+<!-- function -->
+<!-- 
+{{getMsg()}} --> 
+
+<!-- ----------------------------------------------- -->
+ <!-- property binding -->
+
+
+<!-- <h3  [textContent]='title'></h3>
+
+
+
+ <h4  [style.color]= 'color' > example 1</h4>
+
+
+<input type="text" >
+
+
+
+<button [disabled]='isdisabeled'> click me</button>
+
+
+<img [src]='img'>
+
+ -->
+
+
+
+
+
+  
+
+<div class="container">
+<div class="row" >
+    
+
+  
+    <div class="input-field col m2">
+        <input type="date" [(ngModel)]="birthdate" id="txtdate">
+    </div>
+    <div class="input-field col m4">
+        <button (click)="CalculateAge()">Calculate Age</button>
+    </div>
+    
+    <div class="input-field col m2 center">
+        <input type="number" [(ngModel)]="age" id="age">
+    </div>
+    <br> <br>
+    <br>
+
+
+    <p> your age is {{age}}</p>
+</div>
+</div>
